@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: trade
+  session:
+    store-type: redis
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 25MB

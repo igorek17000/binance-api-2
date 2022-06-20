@@ -1,0 +1,135 @@
+2022-03-11 19:21:35 [INFO] - Starting TradeApplication using Java 1.8.0_201 on B-XIAOBO-K with PID 18436 (D:\idea project\Binance_Futures_Java\target\classes started by xiaobo.k in D:\idea project\Binance_Futures_Java)
+2022-03-11 19:21:35 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 19:21:35 [INFO] - Started TradeApplication in 1.109 seconds (JVM running for 3.532)
+2022-03-11 19:23:30 [INFO] - Starting TradeApplication using Java 1.8.0_201 on B-XIAOBO-K with PID 19432 (D:\idea project\Binance_Futures_Java\target\classes started by xiaobo.k in D:\idea project\Binance_Futures_Java)
+2022-03-11 19:23:30 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 19:23:31 [INFO] - Started TradeApplication in 1.159 seconds (JVM running for 2.103)
+2022-03-11 19:26:50 [INFO] - Starting TradeApplication using Java 1.8.0_201 on B-XIAOBO-K with PID 15804 (D:\idea project\Binance_Futures_Java\target\classes started by xiaobo.k in D:\idea project\Binance_Futures_Java)
+2022-03-11 19:26:50 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 19:26:50 [WARN] - No MyBatis mapper was found in '[com.binance.client]' package. Please check your configuration.
+2022-03-11 19:26:50 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'dataSource': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-03-11 19:26:50 [INFO] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-11 19:26:50 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  dataSource defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]
+↑     ↓
+|  org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-03-11 19:27:43 [INFO] - Starting TradeApplication using Java 1.8.0_201 on B-XIAOBO-K with PID 11708 (D:\idea project\Binance_Futures_Java\target\classes started by xiaobo.k in D:\idea project\Binance_Futures_Java)
+2022-03-11 19:27:43 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 19:27:44 [WARN] - No MyBatis mapper was found in '[com.binance.client]' package. Please check your configuration.
+2022-03-11 19:27:44 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'dataSource': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-03-11 19:27:44 [INFO] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-11 19:27:44 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  dataSource defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]
+↑     ↓
+|  org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-03-11 21:02:46 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 5468 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:02:46 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 21:02:47 [INFO] - Started TradeApplication in 1.288 seconds (JVM running for 3.183)
+2022-03-11 21:04:03 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 13460 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:04:03 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 21:04:04 [INFO] - Started TradeApplication in 1.088 seconds (JVM running for 3.848)
+2022-03-11 21:04:23 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 6624 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:04:23 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 21:04:23 [INFO] - Started TradeApplication in 1.307 seconds (JVM running for 3.705)
+2022-03-11 21:05:13 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 15340 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:05:13 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 21:05:14 [INFO] - Started TradeApplication in 0.901 seconds (JVM running for 2.337)
+2022-03-11 21:06:06 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 14828 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:06:06 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 21:06:07 [INFO] - Started TradeApplication in 0.946 seconds (JVM running for 2.051)
+2022-03-11 21:08:45 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 13940 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:08:45 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 21:08:46 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-03-11 21:08:46 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:08:46 [INFO] - Starting service [Tomcat]
+2022-03-11 21:08:46 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-11 21:08:46 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-03-11 21:08:46 [INFO] - Root WebApplicationContext: initialization completed in 980 ms
+2022-03-11 21:08:47 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:08:47 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-11 21:08:47 [INFO] - Started TradeApplication in 2.021 seconds (JVM running for 3.64)
+2022-03-11 21:16:33 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 17392 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:16:33 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 21:16:34 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-03-11 21:16:34 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:16:34 [INFO] - Starting service [Tomcat]
+2022-03-11 21:16:34 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-11 21:16:34 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-03-11 21:16:34 [INFO] - Root WebApplicationContext: initialization completed in 1308 ms
+2022-03-11 21:16:34 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:16:34 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-11 21:16:34 [INFO] - Started TradeApplication in 2.702 seconds (JVM running for 5.677)
+2022-03-11 21:16:50 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 7212 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:16:50 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 21:16:52 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-03-11 21:16:52 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:16:52 [INFO] - Starting service [Tomcat]
+2022-03-11 21:16:52 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-11 21:16:52 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-03-11 21:16:52 [INFO] - Root WebApplicationContext: initialization completed in 1737 ms
+2022-03-11 21:16:53 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:16:53 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-11 21:16:53 [INFO] - Started TradeApplication in 3.924 seconds (JVM running for 5.964)
+2022-03-11 21:57:14 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 9980 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:57:14 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2022-03-11 21:57:15 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-03-11 21:57:15 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:57:15 [INFO] - Starting service [Tomcat]
+2022-03-11 21:57:15 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-11 21:57:15 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-03-11 21:57:15 [INFO] - Root WebApplicationContext: initialization completed in 1290 ms
+2022-03-11 21:57:15 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:57:15 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-11 21:57:15 [INFO] - Started TradeApplication in 2.567 seconds (JVM running for 4.601)
+2022-03-11 21:57:22 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 17276 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-03-11 21:57:22 [INFO] - The following 1 profile is active: "dev"
+2022-03-11 21:57:23 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-03-11 21:57:23 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:57:23 [INFO] - Starting service [Tomcat]
+2022-03-11 21:57:23 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-11 21:57:23 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-03-11 21:57:23 [INFO] - Root WebApplicationContext: initialization completed in 1047 ms
+2022-03-11 21:57:24 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-03-11 21:57:24 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-03-11 21:57:24 [INFO] - Started TradeApplication in 2.24 seconds (JVM running for 4.031)
+2022-03-11 21:57:53 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-11 21:57:53 [INFO] - Initializing Servlet 'dispatcherServlet'
+2022-03-11 21:57:53 [INFO] - Completed initialization in 0 ms

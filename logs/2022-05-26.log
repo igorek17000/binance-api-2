@@ -1,0 +1,113 @@
+2022-05-26 20:30:28 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-26 20:30:28 [INFO] - 此时BTCUSDT：价格为：28925.33625265开仓价格为:29536.91040902,开仓数量为：-1.017,盈利为：591.19268597，强平价为：36024.36866778,账户余额为：6744.2921809
+2022-05-26 20:30:32 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-26 20:30:32 [INFO] - 此时BTCUSDT：价格为：28922.08499614开仓价格为:29536.91040902,开仓数量为：-1.017,盈利为：591.19268597，强平价为：36024.36866778,账户余额为：6744.2921809
+2022-05-26 20:31:47 [INFO] - 此时BTCUSDT：价格为：28914.86495897开仓价格为:29535.69262608,开仓数量为：-1.019,盈利为：620.19583939，强平价为：36010.16916995,账户余额为：6744.26904774
+2022-05-26 20:34:42 [INFO] - 此时BTCUSDT：价格为：28888.62671562开仓价格为:29535.07645684,开仓数量为：-1.02,盈利为：636.16758814，强平价为：36003.08127376,账户余额为：6744.25748486
+2022-05-26 20:34:55 [INFO] - 此时BTCUSDT：价格为：28890.30823057开仓价格为:29534.45170027,开仓数量为：-1.021,盈利为：650.42978597，强平价为：35995.9975104,账户余额为：6744.24592598
+2022-05-26 20:35:44 [INFO] - 此时BTCUSDT：价格为：28875.51416769开仓价格为:29533.8177945,开仓数量为：-1.022,盈利为：662.37638597，强平价为：35988.91728323,账户余额为：6744.23437134
+2022-05-26 20:36:10 [INFO] - 此时BTCUSDT：价格为：28860.39789942开仓价格为:29533.17828541,开仓数量为：-1.023,盈利为：671.88418597，强平价为：35981.84408551,账户余额为：6744.2228195
+2022-05-26 20:36:17 [INFO] - 此时BTCUSDT：价格为：28834.89670498开仓价格为:29532.5109238,开仓数量为：-1.024,盈利为：696.33118597，强平价为：35974.7557286,账户余额为：6744.21127958
+2022-05-26 20:39:56 [INFO] - 此时BTCUSDT：价格为：28818.73284805开仓价格为:29531.83608387,开仓数量为：-1.025,盈利为：719.68948596，强平价为：35967.67246062,账户余额为：6744.19974326
+2022-05-26 20:40:07 [INFO] - 此时BTCUSDT：价格为：28811.32885327开仓价格为:29531.13770562,开仓数量为：-1.026,盈利为：730.92738386，强平价为：35960.57825531,账户余额为：6744.18821714
+2022-05-26 20:41:04 [INFO] - 此时BTCUSDT：价格为：28800.78937141开仓价格为:29530.43357932,开仓数量为：-1.027,盈利为：739.66226478，强平价为：35953.49078845,账户余额为：6744.17669394
+2022-05-26 21:09:58 [INFO] - 此时BTCUSDT：价格为：28787.38339668开仓价格为:29529.71885794,开仓数量为：-1.028,盈利为：750.04818596，强平价为：35946.40519791,账户余额为：6744.16517566
+2022-05-26 21:11:41 [INFO] - 此时BTCUSDT：价格为：28783.67773181开仓价格为:29528.99639063,开仓数量为：-1.029,盈利为：763.12844181，强平价为：35939.32428411,账户余额为：6744.15366114
+2022-05-26 21:11:54 [INFO] - 此时BTCUSDT：价格为：28777.84577641开仓价格为:29528.2566854,开仓数量为：-1.03,盈利为：769.69602909，强平价为：35932.23856058,账户余额为：6744.1421543
+2022-05-26 21:11:56 [INFO] - 此时BTCUSDT：价格为：28770.59131626开仓价格为:29527.48010278,开仓数量为：-1.031,盈利为：780.3523389，强平价为：35925.12843797,账户余额为：6744.13066326
+2022-05-26 21:11:59 [INFO] - 此时BTCUSDT：价格为：28761.62360622开仓价格为:29526.67828097,开仓数量为：-1.032,盈利为：789.53642434，强平价为：35918.00546768,账户余额为：6744.11918326
+2022-05-26 21:12:02 [INFO] - 此时BTCUSDT：价格为：28747.39663881开仓价格为:29525.87597867,开仓数量为：-1.033,盈利为：804.16915807，强平价为：35910.89426425,账户余额为：6744.1077041
+2022-05-26 21:12:08 [INFO] - 此时BTCUSDT：价格为：28714.40359444开仓价格为:29525.05646612,开仓数量为：-1.034,盈利为：838.21506931，强平价为：35903.77813569,账户余额为：6744.0962327
+2022-05-26 21:12:10 [INFO] - 此时BTCUSDT：价格为：28713.13580477开仓价格为:29520.22037112,开仓数量为：-1.04,盈利为：839.367949，强平价为：35861.41642119,账户余额为：6744.02738438
+2022-05-26 21:15:45 [INFO] - 此时BTCUSDT：价格为：28720.62982569开仓价格为:29519.42928527,开仓数量为：-1.041,盈利为：836.96140869，强平价为：35854.41307935,账户余额为：6744.0159057
+2022-05-26 21:15:46 [INFO] - 此时BTCUSDT：价格为：28706.96272424开仓价格为:29518.6428848,开仓数量为：-1.042,盈利为：845.7707273，强平价为：35847.42633273,账户余额为：6744.0044257
+2022-05-26 21:15:47 [INFO] - 此时BTCUSDT：价格为：28701.87615551开仓价格为:29517.85348606,开仓数量为：-1.043,盈利为：851.06435576，强平价为：35840.44849704,账户余额为：6743.99294758
+2022-05-26 21:15:49 [INFO] - 此时BTCUSDT：价格为：28697.10575025开仓价格为:29517.06052295,开仓数量为：-1.044,盈利为：856.03278269，强平价为：35833.47897447,账户余额为：6743.98147158
+2022-05-26 21:15:50 [INFO] - 此时BTCUSDT：价格为：28688.92823822开仓价格为:29516.26802484,开仓数量为：-1.045,盈利为：864.57007701，强平价为：35826.52174267,账户余额为：6743.96999602
+2022-05-26 21:15:53 [INFO] - 此时BTCUSDT：价格为：28674.49506668开仓价格为:29515.47034986,开仓数量为：-1.046,盈利为：861.34049629，强平价为：35819.57115059,账户余额为：6743.95852326
+2022-05-26 21:15:55 [INFO] - 此时BTCUSDT：价格为：28674.70823269开仓价格为:29514.44927025,开仓数量为：-1.047,盈利为：879.20886632，强平价为：35812.40989305,账户余额为：6743.9471447
+2022-05-26 21:16:05 [INFO] - 此时BTCUSDT：价格为：28538.38072621开仓价格为:29513.32947133,开仓数量为：-1.048,盈利为：1021.74628488，强平价为：35805.16207526,账户余额为：6743.93580834
+2022-05-26 21:16:15 [INFO] - 此时BTCUSDT：价格为：28271.68663311开仓价格为:29484.18105033,开仓数量为：-1.072,盈利为：1299.79401525，强平价为：35632.38377198,账户余额为：6743.66497922
+2022-05-26 21:16:22 [INFO] - 此时BTCUSDT：价格为：28193.68183581开仓价格为:29422.98431519,开仓数量为：-1.123,盈利为：1380.50668434，强平价为：35286.37221148,账户余额为：6743.09099151
+2022-05-26 21:17:02 [INFO] - 此时BTCUSDT：价格为：28178.39212113开仓价格为:29402.30585974,开仓数量为：-1.141,盈利为：1382.77186782，强平价为：35171.25151422,账户余额为：6742.88858367
+2022-05-26 21:18:06 [INFO] - 此时BTCUSDT：价格为：28149.42182764开仓价格为:29401.24893692,开仓数量为：-1.142,盈利为：1370.35851462，强平价为：35165.03477466,账户余额为：6742.87730555
+2022-05-26 21:18:09 [INFO] - 此时BTCUSDT：价格为：28176.14643048开仓价格为:29397.91693097,开仓数量为：-1.145,盈利为：1427.93610521，强平价为：35146.27815034,账户余额为：6742.84355011
+2022-05-26 21:18:13 [INFO] - 此时BTCUSDT：价格为：28154.17354825开仓价格为:29396.815171,开仓数量为：-1.146,盈利为：1408.63721108，强平价为：35140.0527749,账户余额为：6742.83229599
+2022-05-26 21:18:14 [INFO] - 此时BTCUSDT：价格为：28139.84473829开仓价格为:29395.68682299,开仓数量为：-1.147,盈利为：1440.45087115，强平价为：35133.8098703,账户余额为：6742.82105495
+2022-05-26 21:18:16 [INFO] - 此时BTCUSDT：价格为：28151.17286788开仓价格为:29394.57969161,开仓数量为：-1.148,盈利为：1427.43103364，强平价为：35127.59700834,账户余额为：6742.80980507
+2022-05-26 21:18:18 [INFO] - 此时BTCUSDT：价格为：28133.27347891开仓价格为:29393.46317317,开仓数量为：-1.149,盈利为：1440.6990104，强平价为：35121.38369617,账户余额为：6742.79856039
+2022-05-26 21:18:20 [INFO] - 此时BTCUSDT：价格为：28127.85064571开仓价格为:29392.34068345,开仓数量为：-1.15,盈利为：1454.1635434，强平价为：35115.17331138,账户余额为：6742.78731935
+2022-05-26 21:18:24 [INFO] - 此时BTCUSDT：价格为：28121.77789638开仓价格为:29391.2078071,开仓数量为：-1.151,盈利为：1446.10899263，强平价为：35108.96143485,账户余额为：6742.77608399
+2022-05-26 21:18:25 [INFO] - 此时BTCUSDT：价格为：28118.23420737开仓价格为:29390.07967532,开仓数量为：-1.152,盈利为：1465.16597907，强平价为：35102.76310843,账户余额为：6742.76484735
+2022-05-26 21:18:27 [INFO] - 此时BTCUSDT：价格为：28101.96610024开仓价格为:29388.95037812,开仓数量为：-1.153,盈利为：1468.31192838，强平价为：35096.57242506,账户余额为：6742.75361215
+2022-05-26 21:18:31 [INFO] - 此时BTCUSDT：价格为：28085.67157795开仓价格为:29387.77971055,开仓数量为：-1.154,盈利为：1502.63278502，强平价为：35090.3493331,账户余额为：6742.74239695
+2022-05-26 21:18:33 [ERROR] - 下单异常[Executing] -1001: Internal error; unable to process your request. Please try again.
+2022-05-26 21:18:33 [INFO] - 此时BTCUSDT：价格为：28046.19577141开仓价格为:29380.58412585,开仓数量为：-1.16,盈利为：1547.89049115，强平价为：35053.02307238,账户余额为：6742.67520503
+2022-05-26 21:18:36 [INFO] - 此时BTCUSDT：价格为：28038.21663964开仓价格为:29378.19688983,开仓数量为：-1.162,盈利为：1557.05705072，强平价为：35040.66144727,账户余额为：6742.65281015
+2022-05-26 22:06:48 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Read timed out
+2022-05-26 22:06:49 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-26 22:07:09 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-26 22:55:22 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-27 04:30:02 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:02 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:03 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:03 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:04 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:04 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:04 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:04 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:05 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:05 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 04:30:15 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Read timed out
+2022-05-27 04:32:30 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 05:56:03 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-27 17:42:12 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-27 17:42:35 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-27 17:42:51 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-27 17:53:02 [ERROR] - 获取余额异常[Invoking] Unexpected error: Read timed out
+2022-05-27 17:53:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-27 21:55:01 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-27 21:55:05 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 02:53:51 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-28 02:53:51 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:51 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-28 02:53:52 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-28 04:30:01 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:01 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:01 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:01 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:02 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:03 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:03 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:04 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:04 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:04 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 04:30:14 [ERROR] - 获取余额异常[Invoking] Unexpected error: Read timed out
+2022-05-28 04:30:24 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Read timed out
+2022-05-28 04:30:34 [ERROR] - 获取余额异常[Invoking] Unexpected error: Read timed out
+2022-05-28 04:32:32 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 05:17:14 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-28 08:17:14 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-28 08:17:17 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-28 11:21:37 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-28 12:42:27 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-28 13:34:59 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout

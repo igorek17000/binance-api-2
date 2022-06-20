@@ -1,0 +1,644 @@
+2022-05-22 12:23:06 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 1808 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-05-22 12:23:06 [INFO] - The following 1 profile is active: "dev"
+2022-05-22 12:23:07 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-05-22 12:23:07 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-05-22 12:23:07 [INFO] - Starting service [Tomcat]
+2022-05-22 12:23:07 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-05-22 12:23:07 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-05-22 12:23:07 [INFO] - Root WebApplicationContext: initialization completed in 1596 ms
+2022-05-22 12:23:07 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tradeServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tradeRecordMapper' defined in file [D:\IdeaProjects\Binance_Futures_Java\target\classes\com\binance\client\mapper\TradeRecordMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Unsatisfied dependency expressed through method 'dataSource' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>
+2022-05-22 12:23:07 [INFO] - Stopping service [Tomcat]
+2022-05-22 12:23:07 [INFO] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-22 12:23:08 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>:
+
+    Property: spring.datasource.type
+    Value: com.alibaba.druid.pool.DruidDataSource
+    Origin: class path resource [application-dev.yml] - 4:11
+    Reason: failed to convert java.lang.String to java.lang.Class<javax.sql.DataSource> (caused by java.lang.ClassNotFoundException: com.alibaba.druid.pool.DruidDataSource)
+
+Action:
+
+Update your application's configuration
+
+2022-05-22 14:35:06 [INFO] - 此时BNXUSDT：价格为：118.44177112开仓价格为:117.2466291835,开仓数量为：-57.9,盈利为：-69.19871812335，强平价为：129.59831719,账户余额为：790.20016121
+2022-05-22 14:35:09 [INFO] - 此时BNXUSDT：价格为：118.28101645开仓价格为:117.2929674872,开仓数量为：-60.6,盈利为：-59.87576714568，强平价为：129.04006537,账户余额为：790.07241161
+2022-05-22 14:35:29 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 14:35:29 [INFO] - 此时BNXUSDT：价格为：118.25502458开仓价格为:117.3077533289,开仓数量为：-61.5,盈利为：0，强平价为：128.86511554,账户余额为：790.02982241
+2022-05-22 14:35:30 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 14:35:30 [INFO] - 此时BNXUSDT：价格为：118.24开仓价格为:117.3077533289,开仓数量为：-61.5,盈利为：0，强平价为：128.86511554,账户余额为：790.02982241
+2022-05-22 14:41:55 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 14:41:55 [INFO] - 此时BNXUSDT：价格为：118.8298266开仓价格为:117.3077533289,开仓数量为：-34.9,盈利为：0，强平价为：137.40269789,账户余额为：749.26710701
+2022-05-22 14:41:57 [INFO] - 此时BNXUSDT：价格为：118.83055211开仓价格为:117.7163879441,开仓数量为：-50.5,盈利为：-56.26529037795，强平价为：131.22643747,账户余额为：748.52685221
+2022-05-22 14:42:00 [INFO] - 此时BNXUSDT：价格为：118.82565046开仓价格为:117.831889503,开仓数量为：-58,盈利为：-57.638135506，强平价为：129.43701971,账户余额为：748.17102341
+2022-05-22 14:42:01 [INFO] - 此时BNXUSDT：价格为：118.75700536开仓价格为:117.836253708,开仓数量为：-58.3,盈利为：-53.6798213116，强平价为：129.37537783,账户余额为：748.15678181
+2022-05-22 15:01:55 [INFO] - 此时BNXUSDT：价格为：118.72214463开仓价格为:117.8407950713,开仓数量为：-58.6,盈利为：-51.64708413982，强平价为：129.31458666,账户余额为：748.14253501
+2022-05-22 15:01:59 [INFO] - 此时BNXUSDT：价格为：118.53267459开仓价格为:117.8436433137,开仓数量为：-58.9,盈利为：-40.58394217407，强平价为：129.25278485,账户余额为：748.12832701
+2022-05-22 15:02:00 [INFO] - 此时BNXUSDT：价格为：118.44903769开仓价格为:117.8461586347,开仓数量为：-59.2,盈利为：-35.69044007376，强平价为：129.19130849,账户余额为：748.11412621
+2022-05-22 15:02:01 [INFO] - 此时BNXUSDT：价格为：118.44979409开仓价格为:117.8475393475,开仓数量为：-59.5,盈利为：-35.83415717875，强平价为：129.12935423,账户余额为：748.09995181
+2022-05-22 15:02:04 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 15:02:04 [INFO] - 此时BNXUSDT：价格为：118.28903769开仓价格为:117.848906207,开仓数量为：-59.8,盈利为：0，强平价为：129.06802159,账户余额为：748.08577741
+2022-05-22 15:02:05 [INFO] - 此时BNXUSDT：价格为：118.28979409开仓价格为:117.8530790624,开仓数量为：-60.6,盈利为：-26.46493067256，强平价为：128.90802463,账户余额为：748.04796461
+2022-05-22 15:02:13 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 15:02:13 [INFO] - 此时BNXUSDT：价格为：118.28673805开仓价格为:117.8546402493,开仓数量为：-60.9,盈利为：0，强平价为：128.84913386,账户余额为：748.03378421
+2022-05-22 15:05:06 [INFO] - 此时BNXUSDT：价格为：118.23578165开仓价格为:117.8546402493,开仓数量为：-60.9,盈利为：-23.21151130263，强平价为：128.84913386,账户余额为：748.03378421
+2022-05-22 15:07:07 [INFO] - 此时BNXUSDT：价格为：118.14开仓价格为:117.8563331893,开仓数量为：-61.2,盈利为：-17.36040881484，强平价为：128.79096601,账户余额为：748.01960021
+2022-05-22 15:07:21 [INFO] - 此时BNXUSDT：价格为：118.18657685开仓价格为:117.8576681494,开仓数量为：-61.5,盈利为：-20.22788508690，强平价为：128.73302769,账户余额为：748.00542461
+2022-05-22 15:07:37 [INFO] - 此时BNXUSDT：价格为：118.06开仓价格为:117.8586988865,开仓数量为：-61.8,盈利为：-12.44040881430，强平价为：128.67536363,账户余额为：747.99125621
+2022-05-22 15:31:56 [INFO] - 此时BNXUSDT：价格为：118.00156886开仓价格为:117.8595264281,开仓数量为：-62.1,盈利为：-8.82083502099，强平价为：128.61806545,账户余额为：747.97709261
+2022-05-22 15:38:48 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 12176 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-05-22 15:38:48 [INFO] - The following 1 profile is active: "dev"
+2022-05-22 15:38:49 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-05-22 15:38:49 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:38:49 [INFO] - Starting service [Tomcat]
+2022-05-22 15:38:49 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-05-22 15:38:49 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-05-22 15:38:49 [INFO] - Root WebApplicationContext: initialization completed in 1034 ms
+2022-05-22 15:38:49 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tradeServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tradeRecordMapper' defined in file [D:\IdeaProjects\Binance_Futures_Java\target\classes\com\binance\client\mapper\TradeRecordMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Unsatisfied dependency expressed through method 'dataSource' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>
+2022-05-22 15:38:49 [INFO] - Stopping service [Tomcat]
+2022-05-22 15:38:49 [INFO] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-22 15:38:49 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>:
+
+    Property: spring.datasource.type
+    Value: com.alibaba.druid.pool.DruidDataSource
+    Origin: class path resource [application-dev.yml] - 4:11
+    Reason: failed to convert java.lang.String to java.lang.Class<javax.sql.DataSource> (caused by java.lang.ClassNotFoundException: com.alibaba.druid.pool.DruidDataSource)
+
+Action:
+
+Update your application's configuration
+
+2022-05-22 15:47:00 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 20592 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-05-22 15:47:00 [INFO] - The following 1 profile is active: "dev"
+2022-05-22 15:47:02 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-05-22 15:47:02 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:47:02 [INFO] - Starting service [Tomcat]
+2022-05-22 15:47:02 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-05-22 15:47:02 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-05-22 15:47:02 [INFO] - Root WebApplicationContext: initialization completed in 1499 ms
+2022-05-22 15:47:02 [INFO] - Init DruidDataSource
+2022-05-22 15:47:02 [INFO] - {dataSource-1} inited
+2022-05-22 15:47:03 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:47:03 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8088 is already in use
+2022-05-22 15:47:03 [INFO] - {dataSource-1} closed
+2022-05-22 15:47:03 [INFO] - Pausing ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:47:03 [INFO] - Stopping service [Tomcat]
+2022-05-22 15:47:03 [INFO] - Stopping ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:47:03 [INFO] - Destroying ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:47:03 [INFO] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-22 15:47:03 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2022-05-22 15:48:19 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 2308 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-05-22 15:48:19 [INFO] - The following 1 profile is active: "dev"
+2022-05-22 15:48:20 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-05-22 15:48:20 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:48:20 [INFO] - Starting service [Tomcat]
+2022-05-22 15:48:20 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-05-22 15:48:20 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-05-22 15:48:20 [INFO] - Root WebApplicationContext: initialization completed in 1189 ms
+2022-05-22 15:48:20 [INFO] - Init DruidDataSource
+2022-05-22 15:48:21 [INFO] - {dataSource-1} inited
+2022-05-22 15:48:21 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-05-22 15:48:21 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-05-22 15:48:21 [INFO] - Started TradeApplication in 2.657 seconds (JVM running for 4.042)
+2022-05-22 15:53:18 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 15:53:18 [INFO] - Initializing Servlet 'dispatcherServlet'
+2022-05-22 15:53:18 [INFO] - Completed initialization in 1 ms
+2022-05-22 15:53:18 [WARN] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-05-22 16:24:32 [INFO] - {dataSource-1} closed
+2022-05-22 16:25:10 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 28508 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-05-22 16:25:10 [INFO] - The following 1 profile is active: "dev"
+2022-05-22 16:25:11 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-05-22 16:25:11 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-05-22 16:25:11 [INFO] - Starting service [Tomcat]
+2022-05-22 16:25:11 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-05-22 16:25:11 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-05-22 16:25:11 [INFO] - Root WebApplicationContext: initialization completed in 1087 ms
+2022-05-22 16:25:11 [INFO] - Init DruidDataSource
+2022-05-22 16:25:12 [INFO] - {dataSource-1} inited
+2022-05-22 16:25:12 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-05-22 16:25:12 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-05-22 16:25:12 [INFO] - Started TradeApplication in 2.83 seconds (JVM running for 4.321)
+2022-05-22 16:25:39 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 16:25:39 [INFO] - Initializing Servlet 'dispatcherServlet'
+2022-05-22 16:25:39 [INFO] - Completed initialization in 1 ms
+2022-05-22 16:54:42 [ERROR] - 获取仓位异常[Invoking] Unexpected error: interrupted
+2022-05-22 16:54:42 [ERROR] - 获取余额异常[Invoking] Unexpected error: interrupted
+2022-05-22 16:54:42 [INFO] - 底层下单异常
+2022-05-22 16:54:46 [INFO] - {dataSource-1} closed
+2022-05-22 16:54:52 [INFO] - Starting TradeApplication using Java 1.8.0_151 on xiaoke with PID 22752 (D:\IdeaProjects\Binance_Futures_Java\target\classes started by kexiaobo in D:\IdeaProjects\Binance_Futures_Java)
+2022-05-22 16:54:52 [INFO] - The following 1 profile is active: "dev"
+2022-05-22 16:54:53 [INFO] - Tomcat initialized with port(s): 8088 (http)
+2022-05-22 16:54:53 [INFO] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-05-22 16:54:53 [INFO] - Starting service [Tomcat]
+2022-05-22 16:54:53 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-05-22 16:54:53 [INFO] - Initializing Spring embedded WebApplicationContext
+2022-05-22 16:54:53 [INFO] - Root WebApplicationContext: initialization completed in 1005 ms
+2022-05-22 16:54:53 [INFO] - Init DruidDataSource
+2022-05-22 16:54:53 [INFO] - {dataSource-1} inited
+2022-05-22 16:54:54 [INFO] - Starting ProtocolHandler ["http-nio-8088"]
+2022-05-22 16:54:54 [INFO] - Tomcat started on port(s): 8088 (http) with context path ''
+2022-05-22 16:54:54 [INFO] - Started TradeApplication in 2.544 seconds (JVM running for 3.956)
+2022-05-22 16:55:05 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 16:55:05 [INFO] - Initializing Servlet 'dispatcherServlet'
+2022-05-22 16:55:05 [INFO] - Completed initialization in 0 ms
+2022-05-22 18:04:11 [INFO] - 此时BNXUSDT：价格为：120.81开仓价格为:117.8595287049,开仓数量为：-46.8,盈利为：-138.08205661068，强平价为：133.28176705,账户余额为：784.1366217
+2022-05-22 18:05:03 [INFO] - 此时BNXUSDT：价格为：120.5908921开仓价格为:118.2217217863,开仓数量为：-53.4,盈利为：-126.51369475158，强平价为：131.58411538,账户余额为：783.81773611
+2022-05-22 18:05:05 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:05 [INFO] - 此时BNXUSDT：价格为：120.52开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:06 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:06 [INFO] - 此时BNXUSDT：价格为：120.54开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:07 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:07 [INFO] - 此时BNXUSDT：价格为：120.56797056开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:08 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:08 [INFO] - 此时BNXUSDT：价格为：120.56797014开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:09 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:09 [INFO] - 此时BNXUSDT：价格为：120.56796972开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:10 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:10 [INFO] - 此时BNXUSDT：价格为：120.5679693开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:11 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:11 [INFO] - 此时BNXUSDT：价格为：120.56796889开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:12 [INFO] - 此时BNXUSDT：价格为：120.56796847开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:13 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:13 [INFO] - 此时BNXUSDT：价格为：120.56796805开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:15 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:15 [INFO] - 此时BNXUSDT：价格为：120.56796763开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:16 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:16 [INFO] - 此时BNXUSDT：价格为：120.55572099开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:05:17 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 18:05:17 [INFO] - 此时BNXUSDT：价格为：120.55572057开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：0，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:06:30 [INFO] - 此时BNXUSDT：价格为：120.57231491开仓价格为:118.2598147954,开仓数量为：-54.3,盈利为：-125.56875622278，强平价为：131.38016323,账户余额为：783.77434891
+2022-05-22 18:07:06 [INFO] - 此时BNXUSDT：价格为：120.55949248开仓价格为:118.2725081207,开仓数量为：-54.6,盈利为：-124.86934601778，强平价为：131.31394523,账户余额为：783.75988051
+2022-05-22 18:18:57 [INFO] - 此时BNXUSDT：价格为：120.34303448开仓价格为:118.2846802075,开仓数量为：-54.9,盈利为：-113.00364956025，强平价为：131.24807235,账户余额为：783.74542051
+2022-05-22 18:18:59 [INFO] - 此时BNXUSDT：价格为：120.31678841开仓价格为:118.2956330325,开仓数量为：-55.2,盈利为：-111.56777683800，强平价为：131.18183971,账户余额为：783.73098451
+2022-05-22 18:19:00 [INFO] - 此时BNXUSDT：价格为：120.31678841开仓价格为:118.3063593404,开仓数量为：-55.5,盈利为：-111.57881336280，强平价为：131.11621611,账户余额为：783.71655091
+2022-05-22 18:40:38 [INFO] - 此时BNXUSDT：价格为：120.28开仓价格为:118.3169703117,开仓数量为：-55.8,盈利为：-109.53705660714，强平价为：131.05129814,账户余额为：783.70211731
+2022-05-22 18:40:52 [INFO] - 此时BNXUSDT：价格为：120.19开仓价格为:118.3270399892,开仓数量为：-56.1,盈利为：-104.51205660588，强平价为：130.98665107,账户余额为：783.68769331
+2022-05-22 18:40:55 [INFO] - 此时BNXUSDT：价格为：120.16635312开仓价格为:118.3364706276,开仓数量为：-56.4,盈利为：-103.20537257136，强平价为：130.9221653,账户余额为：783.67328131
+2022-05-22 18:40:56 [INFO] - 此时BNXUSDT：价格为：120.08开仓价格为:118.3455369206,开仓数量为：-56.7,盈利为：-98.34405660198，强平价为：130.8581001,账户余额为：783.65887531
+2022-05-22 19:26:48 [INFO] - 此时BNXUSDT：价格为：120.03380849开仓价格为:118.3548235684,开仓数量为：-57,盈利为：-95.7021405312，强平价为：130.7950218,账户余额为：783.64446211
+2022-05-22 19:27:39 [INFO] - 此时BNXUSDT：价格为：119.98570978开仓价格为:118.3630705654,开仓数量为：-57.3,盈利为：-92.97722699658，强平价为：130.73167131,账户余额为：783.63007051
+2022-05-22 19:28:14 [INFO] - 此时BNXUSDT：价格为：119.69374463开仓价格为:118.3960874727,开仓数量为：-58.8,盈利为：-76.30224084924，强平价为：130.41773118,账户余额为：783.55827611
+2022-05-22 19:28:34 [INFO] - 此时BNXUSDT：价格为：119.58开仓价格为:118.4021479424,开仓数量为：-59.1,盈利为：-69.61105660416，强平价为：130.35651721,账户余额为：783.54392531
+2022-05-22 19:28:36 [INFO] - 此时BNXUSDT：价格为：119.6开仓价格为:118.4081471952,开仓数量为：-59.4,盈利为：-70.79605660512，强平价为：130.29592155,账户余额为：783.52957451
+2022-05-22 19:28:46 [INFO] - 此时BNXUSDT：价格为：119.5072741开仓价格为:118.413885149,开仓数量为：-59.7,盈利为：-65.2753203747，强平价为：130.23573596,账户余额为：783.51522851
+2022-05-22 19:28:52 [INFO] - 此时BNXUSDT：价格为：119.5873151开仓价格为:118.4190157233,开仓数量为：-60,盈利为：-70.0979626020，强平价为：130.1756079,账户余额为：783.50089571
+2022-05-22 19:28:55 [INFO] - 此时BNXUSDT：价格为：119.33083323开仓价格为:118.4317396289,开仓数量为：-60.9,盈利为：-54.75480030699，强平价为：129.99643788,账户余额为：783.45795491
+2022-05-22 19:28:58 [INFO] - 此时BNXUSDT：价格为：119.29480697开仓价格为:118.4351134542,开仓数量为：-61.2,盈利为：-52.61324316696，强平价为：129.93710936,账户余额为：783.44366051
+2022-05-22 19:28:59 [INFO] - 此时BNXUSDT：价格为：119.21480697开仓价格为:118.4383568032,开仓数量为：-61.5,盈利为：-47.75168525820，强平价为：129.87826309,账户余额为：783.42936851
+2022-05-22 19:29:03 [INFO] - 此时BNXUSDT：价格为：119.1943371开仓价格为:118.441325945,开仓数量为：-61.8,盈利为：-46.5360893790，强平价为：129.81974792,账户余额为：783.41508251
+2022-05-22 19:29:03 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 19:29:03 [INFO] - 此时BNXUSDT：价格为：119.1开仓价格为:118.4442663994,开仓数量为：-62.1,盈利为：0，强平价为：129.76179811,账户余额为：783.40079651
+2022-05-22 19:29:04 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 19:29:04 [INFO] - 此时BNXUSDT：价格为：119.0882091开仓价格为:118.4442663994,开仓数量为：-62.1,盈利为：0，强平价为：129.76179811,账户余额为：783.40079651
+2022-05-22 19:29:07 [INFO] - 此时BNXUSDT：价格为：119.1655371开仓价格为:118.4442663994,开仓数量为：-62.1,盈利为：-44.79091050726，强平价为：129.76179811,账户余额为：783.40079651
+2022-05-22 19:29:08 [INFO] - 此时BNXUSDT：价格为：119.00131932开仓价格为:118.4467939648,开仓数量为：-62.4,盈利为：-34.60238216448，强平价为：129.70402487,账户余额为：783.38652011
+2022-05-22 19:29:09 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 19:29:09 [INFO] - 此时BNXUSDT：价格为：119.00207732开仓价格为:118.449297343,开仓数量为：-62.7,盈利为：0，强平价为：129.64680447,账户余额为：783.37224371
+2022-05-22 19:29:23 [INFO] - 此时BNXUSDT：价格为：119.08开仓价格为:118.449297343,开仓数量为：-62.7,盈利为：-39.5450565939，强平价为：129.64680447,账户余额为：783.37224371
+2022-05-22 19:29:33 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 19:29:33 [INFO] - 此时BNXUSDT：价格为：119.13469085开仓价格为:118.4520149747,开仓数量为：-63,盈利为：0，强平价为：129.59036468,账户余额为：783.35796131
+2022-05-22 19:29:33 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 19:29:33 [INFO] - 此时BNXUSDT：价格为：118.91开仓价格为:118.4520149747,开仓数量为：-63,盈利为：0，强平价为：129.59036468,账户余额为：783.35796131
+2022-05-22 19:30:11 [INFO] - 此时BNXUSDT：价格为：119.03开仓价格为:118.4520149747,开仓数量为：-63,盈利为：-36.4130565939，强平价为：129.59036468,账户余额为：783.35796131
+2022-05-22 19:30:43 [INFO] - 此时BNXUSDT：价格为：118.88070061开仓价格为:118.453948553,开仓数量为：-63.3,盈利为：-27.0134052081，强平价为：129.53370937,账户余额为：783.34369811
+2022-05-22 19:30:52 [INFO] - 此时BNXUSDT：价格为：118.84860915开仓价格为:118.4558167202,开仓数量为：-63.6,盈利为：-24.98159853528，强平价为：129.47754187,账户余额为：783.32943611
+2022-05-22 19:30:53 [INFO] - 此时BNXUSDT：价格为：118.8开仓价格为:118.4568692239,开仓数量为：-63.9,盈利为：-21.92605659279，强平价为：129.42111185,账户余额为：783.31519451
+2022-05-22 19:30:54 [INFO] - 此时BNXUSDT：价格为：118.76860915开仓价格为:118.4577717042,开仓数量为：-64.2,盈利为：-19.95576402036，强平价为：129.36507047,账户余额为：783.30095651
+2022-05-22 19:30:57 [INFO] - 此时BNXUSDT：价格为：118.68617926开仓价格为:118.4587123009,开仓数量为：-64.5,盈利为：-14.67161886195，强平价为：129.30959645,账户余额为：783.28671731
+2022-05-22 19:31:12 [INFO] - 此时BNXUSDT：价格为：118.66开仓价格为:118.4594590032,开仓数量为：-64.8,盈利为：-12.99505659264，强平价为：129.25445279,账户余额为：783.27248291
+2022-05-22 19:31:38 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-22 19:31:38 [INFO] - 此时BNXUSDT：价格为：118.52开仓价格为:118.4599376867,开仓数量为：-65.1,盈利为：0，强平价为：129.19955892,账户余额为：783.25825531
+2022-05-22 19:31:43 [INFO] - 此时BNXUSDT：价格为：118.58开仓价格为:118.4599376867,开仓数量为：-65.1,盈利为：-7.81605659583，强平价为：129.19955892,账户余额为：783.25825531
+2022-05-22 19:31:48 [INFO] - 此时BNXUSDT：价格为：118.52开仓价格为:118.460304945,开仓数量为：-65.4,盈利为：-3.9040565970，强平价为：129.14506273,账户余额为：783.24403051
+2022-05-22 19:32:44 [INFO] - 此时BNXUSDT：价格为：118.5开仓价格为:118.4606688494,开仓数量为：-65.7,盈利为：-2.58405659442，强平价为：129.09106422,账户余额为：783.22980571
+2022-05-22 19:32:45 [INFO] - 此时BNXUSDT：价格为：118.4开仓价格为:118.4604385364,开仓数量为：-66,盈利为：3.9889434024，强平价为：129.03697179,账户余额为：783.21559651
+2022-05-22 19:32:51 [INFO] - 此时BNXUSDT：价格为：118.44137422开仓价格为:118.4598483168,开仓数量为：-66.3,盈利为：1.22483261784，强平价为：128.98301062,账户余额为：783.20139691
+2022-05-22 20:56:06 [INFO] - 此时BNXUSDT：价格为：118.47345096开仓价格为:118.4593985496,开仓数量为：-66.6,盈利为：-0.93589053264，强平价为：128.92966932,账户余额为：783.18719371
+2022-05-22 22:15:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 00:11:05 [INFO] - 此时BNXUSDT：价格为：118.28开仓价格为:118.458773444,开仓数量为：-66.9,盈利为：11.9599434036，强平价为：128.88838732,账户余额为：783.96749971
+2022-05-23 00:11:47 [INFO] - 此时BNXUSDT：价格为：118.24056628开仓价格为:118.4578414197,开仓数量为：-67.2,盈利为：14.60088938784，强平价为：128.83545869,账户余额为：783.95330971
+2022-05-23 00:11:55 [INFO] - 此时BNXUSDT：价格为：118.23906674开仓价格为:118.4567399023,开仓数量为：-67.5,盈利为：14.69293845525，强平价为：128.78282461,账户余额为：783.93912451
+2022-05-23 00:12:06 [INFO] - 此时BNXUSDT：价格为：118.01开仓价格为:118.4547189293,开仓数量为：-67.8,盈利为：30.15194340654，强平价为：128.72973666,账户余额为：783.92496451
+2022-05-23 00:12:14 [INFO] - 此时BNXUSDT：价格为：117.96571418开仓价格为:118.448106891,开仓数量为：-68.7,盈利为：33.1403792457，强平价为：128.57260648,账户余额为：783.88250251
+2022-05-23 00:12:18 [INFO] - 此时BNXUSDT：价格为：117.92602846开仓价格为:118.4455064263,开仓数量为：-69,盈利为：35.8439796747，强平价为：128.52071034,账户余额为：783.86836051
+2022-05-23 00:12:20 [INFO] - 此时BNXUSDT：价格为：117.9052231开仓价格为:118.4427553162,开仓数量为：-69.3,盈利为：37.25098258266，强平价为：128.46909214,账户余额为：783.85422331
+2022-05-23 00:12:27 [INFO] - 此时BNXUSDT：价格为：117.73967294开仓价格为:118.4399273479,开仓数量为：-69.6,盈利为：48.73770678984，强平价为：128.41781939,账户余额为：783.84008892
+2022-05-23 00:12:30 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 00:12:30 [INFO] - 此时BNXUSDT：价格为：117.57099784开仓价格为:118.4362366726,开仓数量为：-69.9,盈利为：0，强平价为：128.3661089,账户余额为：783.82597932
+2022-05-23 00:12:34 [INFO] - 此时BNXUSDT：价格为：117.5978682开仓价格为:118.4190709341,开仓数量为：-71.1,盈利为：58.38751439451，强平价为：128.16094416,账户余额为：783.76961812
+2022-05-23 00:12:36 [INFO] - 此时BNXUSDT：价格为：117.43092555开仓价格为:118.4148311403,开仓数量为：-71.4,盈利为：70.25085914742，强平价为：128.11069241,账户余额为：783.75552892
+2022-05-23 00:12:38 [INFO] - 此时BNXUSDT：价格为：117.5开仓价格为:118.4108778719,开仓数量为：-71.7,盈利为：65.30994341523，强平价为：128.06110963,账户余额为：783.74143252
+2022-05-23 00:13:07 [INFO] - 此时BNXUSDT：价格为：117.50334201开仓价格为:118.4069992141,开仓数量为：-72,盈利为：65.0633186952，强平价为：128.01198127,账户余额为：783.72733492
+2022-05-23 00:13:09 [INFO] - 此时BNXUSDT：价格为：117.42387187开仓价格为:118.4027378066,开仓数量为：-72.3,盈利为：70.77200721618，强平价为：127.96284995,账户余额为：783.71324932
+2022-05-23 00:13:21 [INFO] - 此时BNXUSDT：价格为：117.39149437开仓价格为:118.3984289727,开仓数量为：-72.6,盈利为：73.10345215602，强平价为：127.9140429,账户余额为：783.69916612
+2022-05-23 00:13:44 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 00:13:44 [INFO] - 此时BNXUSDT：价格为：117.36439519开仓价格为:118.3937852321,开仓数量为：-72.9,盈利为：0，强平价为：127.86527098,账户余额为：783.68509372
+2022-05-23 00:13:46 [INFO] - 此时BNXUSDT：价格为：117.20542061开仓价格为:118.3768869204,开仓数量为：-73.9,盈利为：86.57136033856，强平价为：127.70388375,账户余额为：783.63823572
+2022-05-23 00:13:50 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 00:13:50 [INFO] - 此时BNXUSDT：价格为：117.20397261开仓价格为:118.3718455986,开仓数量为：-74.2,盈利为：0，强平价为：127.65625581,账户余额为：783.62418012
+2022-05-23 00:13:52 [INFO] - 此时BNXUSDT：价格为：117.15开仓价格为:118.3718455986,开仓数量为：-74.2,盈利为：90.66094341612，强平价为：127.65625581,账户余额为：783.62418012
+2022-05-23 02:02:19 [INFO] - 此时BNXUSDT：价格为：117.0619381开仓价格为:118.3669656834,开仓数量为：-74.5,盈利为：97.22455496330，强平价为：127.60913103,账户余额为：783.61012092
+2022-05-23 02:02:20 [INFO] - 此时BNXUSDT：价格为：117.0619381开仓价格为:118.3617639494,开仓数量为：-74.8,盈利为：97.22697353512，强平价为：127.56202699,账户余额为：783.59607252
+2022-05-23 04:30:01 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:01 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:02 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:02 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:02 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:02 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:04 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:04 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:30:05 [ERROR] - 获取余额异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 04:32:25 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Remote host closed connection during handshake
+2022-05-23 10:02:48 [INFO] - 此时BNXUSDT：价格为：116.9400556开仓价格为:118.3566437206,开仓数量为：-75.1,盈利为：106.38576785706，强平价为：127.52715666,账户余额为：784.47841652
+2022-05-23 10:02:49 [INFO] - 此时BNXUSDT：价格为：116.8593548开仓价格为:118.3368282029,开仓数量为：-76,盈利为：112.2879786204，强平价为：127.38451477,账户余额为：784.43641052
+2022-05-23 10:02:52 [INFO] - 此时BNXUSDT：价格为：116.77471801开仓价格为:118.3301565324,开仓数量为：-76.3,盈利为：118.67995925912，强平价为：127.33754664,账户余额为：784.42241372
+2022-05-23 10:02:53 [INFO] - 此时BNXUSDT：价格为：116.75670001开仓价格为:118.3094422724,开仓数量为：-77.2,盈利为：119.87170265728，强平价为：127.19783253,账户余额为：784.38045452
+2022-05-23 10:02:54 [INFO] - 此时BNXUSDT：价格为：116.67670001开仓价格为:118.3022057217,开仓数量为：-77.5,盈利为：125.97669265675，强平价为：127.15154807,账户余额为：784.36648172
+2022-05-23 10:02:59 [INFO] - 此时BNXUSDT：价格为：116.6752586开仓价格为:118.2951792215,开仓数量为：-77.8,盈利为：126.02982435270，强平价为：127.10577321,账户余额为：784.35250412
+2022-05-23 10:03:02 [INFO] - 此时BNXUSDT：价格为：116.5497112开仓价格为:118.2880914652,开仓数量为：-78.1,盈利为：135.76749871212，强平价为：127.06023596,账户余额为：784.33853012
+2022-05-23 10:03:05 [INFO] - 此时BNXUSDT：价格为：116.55551082开仓价格为:118.2811344826,开仓数量为：-78.4,盈利为：135.28889514784，强平价为：127.01512297,账户余额为：784.32455372
+2022-05-23 10:03:08 [INFO] - 此时BNXUSDT：价格为：116.5542851开仓价格为:118.2742305392,开仓数量为：-78.7,盈利为：135.35970606504，强平价为：126.97035389,账户余额为：784.31057732
+2022-05-23 10:03:09 [INFO] - 此时BNXUSDT：价格为：116.4735553开仓价格为:118.2673790308,开仓数量为：-79,盈利为：141.7120747332，强平价为：126.92592486,账户余额为：784.29660092
+2022-05-23 10:03:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 10:03:12 [INFO] - 此时BNXUSDT：价格为：116.44开仓价格为:118.2605793623,开仓数量为：-79.3,盈利为：0，强平价为：126.88183197,账户余额为：784.28262452
+2022-05-23 10:04:31 [INFO] - 此时BNXUSDT：价格为：116.5开仓价格为:118.2605793623,开仓数量为：-79.3,盈利为：139.61394343039，强平价为：126.88183197,账户余额为：784.28262452
+2022-05-23 10:04:35 [INFO] - 此时BNXUSDT：价格为：116.22446117开仓价格为:118.2520595908,开仓数量为：-79.6,盈利为：161.39683429568，强平价为：126.83631832,账户余额为：784.26870452
+2022-05-23 10:04:37 [INFO] - 此时BNXUSDT：价格为：116.20644317开仓价格为:118.2112693394,开仓数量为：-81.1,盈利为：162.59140233834，强平价为：126.61465516,账户余额为：784.19907652
+2022-05-23 10:04:40 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 10:04:40 [INFO] - 此时BNXUSDT：价格为：116.20512277开仓价格为:118.2033408283,开仓数量为：-81.4,盈利为：0，强平价为：126.5713515,账户余额为：784.18514932
+2022-05-23 10:04:41 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 10:04:41 [INFO] - 此时BNXUSDT：价格为：116.13开仓价格为:118.1930066433,开仓数量为：-81.8,盈利为：0，强平价为：126.51425256,账户余额为：784.16657492
+2022-05-23 10:05:30 [INFO] - 此时BNXUSDT：价格为：116.17开仓价格为:118.1930066433,开仓数量为：-81.8,盈利为：165.48194342194，强平价为：126.51425256,账户余额为：784.16657492
+2022-05-23 10:05:46 [INFO] - 此时BNXUSDT：价格为：116.08357819开仓价格为:118.1852855472,开仓数量为：-82.1,盈利为：172.55017402612，强平价为：126.47175731,账户余额为：784.15264532
+2022-05-23 10:06:28 [INFO] - 此时BNXUSDT：价格为：115.97672306开仓价格为:118.1775842649,开仓数量为：-82.4,盈利为：181.35096328376，强平价为：126.42953547,账户余额为：784.13871692
+2022-05-23 10:06:29 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 10:06:29 [INFO] - 此时BNXUSDT：价格为：115.97476509开仓价格为:118.169757478,开仓数量为：-82.7,盈利为：0，强平价为：126.38744044,账户余额为：784.12479452
+2022-05-23 10:06:36 [INFO] - 此时BNXUSDT：价格为：116.02开仓价格为:118.169757478,开仓数量为：-82.7,盈利为：177.7849434306，强平价为：126.38744044,账户余额为：784.12479452
+2022-05-23 10:06:37 [INFO] - 此时BNXUSDT：价格为：115.96开仓价格为:118.1617342582,开仓数量为：-83,盈利为：182.7439434306，强平价为：126.3453993,账户余额为：784.11088052
+2022-05-23 10:09:06 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 10:09:06 [INFO] - 此时BNXUSDT：价格为：116.08开仓价格为:118.1537328143,开仓数量为：-83.3,盈利为：0，强平价为：127.25450074,账户余额为：864.09696772
+2022-05-23 10:09:08 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 10:09:08 [INFO] - 此时BNXUSDT：价格为：116.08开仓价格为:118.0580291344,开仓数量为：-87.3,盈利为：0，强平价为：126.6870494,账户余额为：863.91126372
+2022-05-23 10:09:19 [INFO] - 此时BNXUSDT：价格为：116.17开仓价格为:118.0318863665,开仓数量为：-88.5,盈利为：164.77694343525，强平价为：126.52768881,账户余额为：863.85552132
+2022-05-23 10:09:20 [INFO] - 此时BNXUSDT：价格为：115.92开仓价格为:117.995954927,开仓数量为：-90,盈利为：186.835943430，强平价为：126.33027435,账户余额为：863.78599573
+2022-05-23 10:09:21 [INFO] - 此时BNXUSDT：价格为：115.91124273开仓价格为:117.9889251764,开仓数量为：-90.3,盈利为：187.61472490992，强平价为：126.29159165,账户余额为：863.77209013
+2022-05-23 10:09:37 [INFO] - 此时BNXUSDT：价格为：115.85开仓价格为:117.9819419805,开仓数量为：-90.6,盈利为：193.15394343330，强平价为：126.25316512,账户余额为：863.75818453
+2022-05-23 10:09:38 [INFO] - 此时BNXUSDT：价格为：115.83919142开仓价格为:117.974641842,开仓数量为：-90.9,盈利为：194.1124433598，强平价为：126.21463294,账户余额为：863.74429213
+2022-05-23 10:09:49 [INFO] - 此时BNXUSDT：价格为：115.74434479开仓价格为:117.9674555202,开仓数量为：-91.2,盈利为：202.74769859424，强平价为：126.17641937,账户余额为：863.73039733
+2022-05-23 10:09:50 [INFO] - 此时BNXUSDT：价格为：115.74434479开仓价格为:117.9598245185,开仓数量为：-91.5,盈利为：202.71639515775，强平价为：126.13796963,账户余额为：863.71652053
+2022-05-23 10:09:51 [INFO] - 此时BNXUSDT：价格为：115.74364939开仓价格为:117.9522760724,开仓数量为：-91.8,盈利为：202.75192944432，强平价为：126.09980355,账户余额为：863.70264253
+2022-05-23 10:10:09 [INFO] - 此时BNXUSDT：价格为：115.65521503开仓价格为:117.9447985174,开仓数量为：-92.1,盈利为：210.87063918954，强平价为：126.0619076,账户余额为：863.68876373
+2022-05-23 10:10:10 [INFO] - 此时BNXUSDT：价格为：115.65521503开仓价格为:117.9367634573,开仓数量为：-92.4,盈利为：210.81507468252，强平价为：126.0236579,账户余额为：863.67490733
+2022-05-23 10:10:11 [INFO] - 此时BNXUSDT：价格为：115.65521503开仓价格为:117.9288127665,开仓数量为：-92.7,盈利为：210.76251017355，强平价为：125.98568781,账户余额为：863.66104973
+2022-05-23 10:10:12 [INFO] - 此时BNXUSDT：价格为：115.57521503开仓价格为:117.9209133705,开仓数量为：-93,盈利为：218.1499456665，强平价为：125.94796269,账户余额为：863.64719213
+2022-05-23 10:10:14 [INFO] - 此时BNXUSDT：价格为：115.57480797开仓价格为:117.9131612375,开仓数量为：-93.3,盈利为：218.16835985775，强平价为：125.91057563,账户余额为：863.63333093
+2022-05-23 10:16:27 [INFO] - 此时BNXUSDT：价格为：115.86519066开仓价格为:117.9056831566,开仓数量为：-93.6,盈利为：190.99009768176，强平价为：127.46034743,账户余额为：1013.61946133
+2022-05-23 10:21:56 [INFO] - 此时BNXUSDT：价格为：115.81开仓价格为:117.6961458908,开仓数量为：-103.8,盈利为：195.78194346504，强平价为：126.19476764,账户余额为：1013.14710616
+2022-05-23 10:21:58 [INFO] - 此时BNXUSDT：价格为：115.80479696开仓价格为:117.690652675,开仓数量为：-104.1,盈利为：196.3175799315，强平价为：126.16134671,账户余额为：1013.13321136
+2022-05-23 10:24:44 [INFO] - 此时BNXUSDT：价格为：115.73419825开仓价格为:117.6851910294,开仓数量为：-104.4,盈利为：203.68364616936，强平价为：126.12811785,账户余额为：1013.11931656
+2022-05-23 10:24:45 [INFO] - 此时BNXUSDT：价格为：115.73350285开仓价格为:117.679502803,开仓数量为：-104.7,盈利为：203.7461950791，强平价为：126.09482421,账户余额为：1013.10543256
+2022-05-23 10:25:21 [INFO] - 此时BNXUSDT：价格为：115.72405848开仓价格为:117.6738470807,开仓数量为：-105,盈利为：204.7278030735，强平价为：126.06172081,账户余额为：1013.09154856
+2022-05-23 10:25:22 [INFO] - 此时BNXUSDT：价格为：115.65开仓价格为:117.6680526446,开仓数量为：-105.3,盈利为：212.50094347638，强平价为：126.02863685,账户余额为：1013.07767176
+2022-05-23 10:25:23 [INFO] - 此时BNXUSDT：价格为：115.65开仓价格为:117.6622911314,开仓数量为：-105.6,盈利为：212.49794347584，强平价为：125.99574087,账户余额为：1013.06379496
+2022-05-23 10:34:57 [INFO] - 此时BNXUSDT：价格为：115.63373441开仓价格为:117.6565056041,开仓数量为：-105.9,盈利为：214.21146945519，强平价为：125.96297519,账户余额为：1013.04992056
+2022-05-23 12:11:01 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:01 [INFO] - 此时BNXUSDT：价格为：118.15开仓价格为:117.6386230662,开仓数量为：-100,盈利为：0，强平价为：126.57045662,账户余额为：1004.94728443
+2022-05-23 12:11:04 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:04 [INFO] - 此时BNXUSDT：价格为：118.2268735开仓价格为:117.6640255468,开仓数量为：-79.4,盈利为：0，强平价为：129.02836504,账户余额为：1004.77707803
+2022-05-23 12:11:05 [INFO] - 此时BNXUSDT：价格为：118.2333649开仓价格为:117.671856432,开仓数量为：-80.6,盈利为：-45.2575825208，强平价为：128.84888061,账户余额为：1004.72034683
+2022-05-23 12:11:18 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:18 [INFO] - 此时BNXUSDT：价格为：118.10652643开仓价格为:117.6737778544,开仓数量为：-80.9,盈利为：0，强平价为：128.80484148,账户余额为：1004.70616403
+2022-05-23 12:11:20 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:20 [INFO] - 此时BNXUSDT：价格为：118.10581697开仓价格为:117.6763668932,开仓数量为：-81.3,盈利为：0，强平价为：128.7466769,账户余额为：1004.68725203
+2022-05-23 12:11:21 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:21 [INFO] - 此时BNXUSDT：价格为：118.10579496开仓价格为:117.6763668932,开仓数量为：-81.3,盈利为：0，强平价为：128.7466769,账户余额为：1004.68725203
+2022-05-23 12:11:22 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:22 [INFO] - 此时BNXUSDT：价格为：118.10508592开仓价格为:117.6763668932,开仓数量为：-81.3,盈利为：0，强平价为：128.7466769,账户余额为：1004.68725203
+2022-05-23 12:11:23 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:23 [INFO] - 此时BNXUSDT：价格为：118.10508551开仓价格为:117.6763668932,开仓数量为：-81.3,盈利为：0，强平价为：128.7466769,账户余额为：1004.68725203
+2022-05-23 12:11:25 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:25 [INFO] - 此时BNXUSDT：价格为：118.10412385开仓价格为:117.6763668932,开仓数量为：-81.3,盈利为：0，强平价为：128.7466769,账户余额为：1004.68725203
+2022-05-23 12:11:26 [INFO] - 此时BNXUSDT：价格为：118.10414463开仓价格为:117.6763668932,开仓数量为：-81.3,盈利为：-34.77833000184，强平价为：128.7466769,账户余额为：1004.68725203
+2022-05-23 12:11:27 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:27 [INFO] - 此时BNXUSDT：价格为：118.10414422开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:29 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:29 [INFO] - 此时BNXUSDT：价格为：118.10414381开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:30 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:30 [INFO] - 此时BNXUSDT：价格为：118.10341276开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:31 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:31 [INFO] - 此时BNXUSDT：价格为：118.10341235开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:32 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:32 [INFO] - 此时BNXUSDT：价格为：118.10412057开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:33 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:33 [INFO] - 此时BNXUSDT：价格为：118.10414176开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:34 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:34 [INFO] - 此时BNXUSDT：价格为：118.10484999开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:35 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:35 [INFO] - 此时BNXUSDT：价格为：118.10414094开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:36 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:11:36 [INFO] - 此时BNXUSDT：价格为：118.10414053开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：0，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:38 [INFO] - 此时BNXUSDT：价格为：118.10484875开仓价格为:117.6781817208,开仓数量为：-81.6,盈利为：-34.81602958272，强平价为：128.70331853,账户余额为：1004.67307163
+2022-05-23 12:11:39 [INFO] - 此时BNXUSDT：价格为：118.09开仓价格为:117.6796535826,开仓数量为：-81.9,盈利为：-33.60737158506，强平价为：128.65995153,账户余额为：1004.65890203
+2022-05-23 12:22:55 [INFO] - 此时BNXUSDT：价格为：118.39300683开仓价格为:117.6810538736,开仓数量为：-82.2,盈利为：-58.52253301608，强平价为：128.61684087,账户余额为：987.0507053
+2022-05-23 12:22:56 [INFO] - 此时BNXUSDT：价格为：118.36开仓价格为:117.8389171788,开仓数量为：-79.4,盈利为：-41.37397600328，强平价为：128.97002934,账户余额为：986.2125097
+2022-05-23 12:22:58 [INFO] - 此时BNXUSDT：价格为：118.31开仓价格为:117.8405398243,开仓数量为：-79.7,盈利为：-37.41597600329，强平价为：128.92516915,账户余额为：986.1983173
+2022-05-23 12:22:59 [INFO] - 此时BNXUSDT：价格为：118.28869508开仓价格为:117.8422253,开仓数量为：-80,盈利为：-35.71758240，强平价为：128.88071964,账户余额为：986.18412251
+2022-05-23 12:23:02 [INFO] - 此时BNXUSDT：价格为：118.28869508开仓价格为:117.843823462,开仓数量为：-80.3,盈利为：-35.7231909254，强平价为：128.83652829,账户余额为：986.16993011
+2022-05-23 12:28:07 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:28:07 [INFO] - 此时BNXUSDT：价格为：118.6开仓价格为:117.8454469479,开仓数量为：-60.5,盈利为：0，强平价为：132.53582821,账户余额为：968.82172701
+2022-05-23 12:28:10 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:28:10 [INFO] - 此时BNXUSDT：价格为：118.73740041开仓价格为:117.9086300206,开仓数量为：-65.3,盈利为：0，强平价为：133.20478002,账户余额为：968.44899943
+2022-05-23 12:28:11 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:28:11 [INFO] - 此时BNXUSDT：价格为：118.73422776开仓价格为:117.920717049,开仓数量为：-66.3,盈利为：0，强平价为：133.04348449,账户余额为：968.38964543
+2022-05-23 12:28:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:28:12 [INFO] - 此时BNXUSDT：价格为：118.77329411开仓价格为:117.920717049,开仓数量为：-66.3,盈利为：0，强平价为：133.04348449,账户余额为：968.38964543
+2022-05-23 12:28:13 [INFO] - 此时BNXUSDT：价格为：118.7732937开仓价格为:117.920717049,开仓数量为：-66.3,盈利为：-56.5258319613，强平价为：133.04348449,账户余额为：968.38964543
+2022-05-23 12:28:15 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:28:15 [INFO] - 此时BNXUSDT：价格为：118.76开仓价格为:117.924632738,开仓数量为：-66.6,盈利为：0，强平价为：132.96257644,账户余额为：968.37539063
+2022-05-23 12:28:37 [INFO] - 此时BNXUSDT：价格为：118.90456874开仓价格为:117.924632738,开仓数量为：-60,盈利为：-58.796160120，强平价为：135.13501458,账户余额为：962.73227551
+2022-05-23 12:29:17 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:29:17 [INFO] - 此时BNXUSDT：价格为：119.10468936开仓价格为:117.9975449133,开仓数量为：-49.5,盈利为：0，强平价为：139.61028337,账户余额为：943.66083863
+2022-05-23 12:29:19 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:29:19 [INFO] - 此时BNXUSDT：价格为：119.10545177开仓价格为:118.1711804557,开仓数量为：-59.7,盈利为：0，强平价为：135.14950761,账户余额为：943.17526223
+2022-05-23 12:29:21 [INFO] - 此时BNXUSDT：价格为：119.10616517开仓价格为:118.215839512,开仓数量为：-63.1,盈利为：-56.1795490198，强平价为：134.04112677,账户余额为：943.01342223
+2022-05-23 12:29:36 [INFO] - 此时BNXUSDT：价格为：119.01626014开仓价格为:118.2340785325,开仓数量为：-64.6,盈利为：-50.52893184450，强平价为：133.59589662,账户余额为：942.94202143
+2022-05-23 12:29:37 [INFO] - 此时BNXUSDT：价格为：119.03开仓价格为:118.2376806348,开仓数量为：-64.9,盈利为：-51.42152680148，强平价为：133.5098243,账户余额为：942.92773983
+2022-05-23 12:29:52 [INFO] - 此时BNXUSDT：价格为：118.87193978开仓价格为:118.2411882392,开仓数量为：-65.2,盈利为：-41.12500046016，强平价为：133.42461275,账户余额为：942.91345983
+2022-05-23 12:29:53 [INFO] - 此时BNXUSDT：价格为：118.87193978开仓价格为:118.2432896671,开仓数量为：-65.5,盈利为：-41.17658239495，强平价为：133.33871991,账户余额为：942.89921583
+2022-05-23 12:30:14 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:30:14 [INFO] - 此时BNXUSDT：价格为：118.84359678开仓价格为:118.2453263404,开仓数量为：-65.8,盈利为：0，强平价为：133.25369437,账户余额为：942.88497303
+2022-05-23 12:30:15 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:30:15 [INFO] - 此时BNXUSDT：价格为：118.84359678开仓价格为:118.2453263404,开仓数量为：-65.8,盈利为：0，强平价为：133.25369437,账户余额为：942.88497303
+2022-05-23 12:30:17 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:30:17 [INFO] - 此时BNXUSDT：价格为：118.84146751开仓价格为:118.2453263404,开仓数量为：-65.8,盈利为：0，强平价为：133.25369437,账户余额为：942.88497303
+2022-05-23 12:30:18 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:30:18 [INFO] - 此时BNXUSDT：价格为：118.75437471开仓价格为:118.2453263404,开仓数量为：-65.8,盈利为：0，强平价为：133.25369437,账户余额为：942.88497303
+2022-05-23 12:30:19 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:30:19 [INFO] - 此时BNXUSDT：价格为：118.81开仓价格为:118.2453263404,开仓数量为：-65.8,盈利为：0，强平价为：133.25369437,账户余额为：942.88497303
+2022-05-23 12:32:08 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:08 [INFO] - 此时BNXUSDT：价格为：119.51024074开仓价格为:118.2453263404,开仓数量为：-65.8,盈利为：0，强平价为：133.25369437,账户余额为：894.90954095
+2022-05-23 12:32:11 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:11 [INFO] - 此时BNXUSDT：价格为：119.55650622开仓价格为:118.5439114493,开仓数量为：-42.5,盈利为：0，强平价为：153.46261964,账户余额为：893.97184296
+2022-05-23 12:32:13 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:13 [INFO] - 此时BNXUSDT：价格为：119.63579182开仓价格为:118.6802717987,开仓数量为：-48.7,盈利为：0，强平价为：145.98766237,账户余额为：893.67519776
+2022-05-23 12:32:15 [INFO] - 此时BNXUSDT：价格为：119.71740011开仓价格为:118.7163611208,开仓数量为：-50.5,盈利为：-50.55246895460，强平价为：144.38392102,账户余额为：893.58901896
+2022-05-23 12:32:16 [INFO] - 此时BNXUSDT：价格为：119.6388597开仓价格为:118.7222881221,开仓数量为：-50.8,盈利为：-46.56183615732，强平价为：144.13488286,账户余额为：893.57465256
+2022-05-23 12:32:17 [INFO] - 此时BNXUSDT：价格为：119.63885928开仓价格为:118.7279694051,开仓数量为：-51.1,盈利为：-46.54647260739，强平价为：143.89030606,账户余额为：893.56028976
+2022-05-23 12:32:50 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:50 [INFO] - 此时BNXUSDT：价格为：119.62970598开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:51 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:51 [INFO] - 此时BNXUSDT：价格为：119.59765795开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:52 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:52 [INFO] - 此时BNXUSDT：价格为：119.59840375开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:53 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:53 [INFO] - 此时BNXUSDT：价格为：119.59765795开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:55 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:55 [INFO] - 此时BNXUSDT：价格为：119.59765795开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:56 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:56 [INFO] - 此时BNXUSDT：价格为：119.59687729开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:57 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:57 [INFO] - 此时BNXUSDT：价格为：119.59613149开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:58 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:58 [INFO] - 此时BNXUSDT：价格为：119.59613149开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:32:59 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:32:59 [INFO] - 此时BNXUSDT：价格为：119.59684969开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:00 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:00 [INFO] - 此时BNXUSDT：价格为：119.59759549开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:01 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:01 [INFO] - 此时BNXUSDT：价格为：119.59342286开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:02 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:02 [INFO] - 此时BNXUSDT：价格为：119.59342286开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:03 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:03 [INFO] - 此时BNXUSDT：价格为：119.59270466开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:04 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:04 [INFO] - 此时BNXUSDT：价格为：119.59270466开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:05 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:05 [INFO] - 此时BNXUSDT：价格为：119.59270466开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:07 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:07 [INFO] - 此时BNXUSDT：价格为：119.59045623开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:08 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:08 [INFO] - 此时BNXUSDT：价格为：119.59045623开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:09 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:09 [INFO] - 此时BNXUSDT：价格为：119.59600203开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:10 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:10 [INFO] - 此时BNXUSDT：价格为：119.59597443开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:11 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:11 [INFO] - 此时BNXUSDT：价格为：119.59525623开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:12 [INFO] - 此时BNXUSDT：价格为：119.58911384开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:13 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:13 [INFO] - 此时BNXUSDT：价格为：119.58911384开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：0，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:14 [INFO] - 此时BNXUSDT：价格为：119.58839564开仓价格为:118.7335843697,开仓数量为：-51.4,盈利为：-43.93729929342，强平价为：143.65034449,账户余额为：893.54592696
+2022-05-23 12:33:15 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:15 [INFO] - 此时BNXUSDT：价格为：119.51开仓价格为:118.7378575745,开仓数量为：-51.7,盈利为：0，强平价为：143.4128336,账户余额为：893.53159056
+2022-05-23 12:33:16 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:16 [INFO] - 此时BNXUSDT：价格为：119.51开仓价格为:118.7378575745,开仓数量为：-51.7,盈利为：0，强平价为：143.4128336,账户余额为：893.53159056
+2022-05-23 12:33:18 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:18 [INFO] - 此时BNXUSDT：价格为：119.51209901开仓价格为:118.7378575745,开仓数量为：-51.7,盈利为：0，强平价为：143.4128336,账户余额为：893.53159056
+2022-05-23 12:33:19 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:19 [INFO] - 此时BNXUSDT：价格为：119.51138081开仓价格为:118.7378575745,开仓数量为：-51.7,盈利为：0，强平价为：143.4128336,账户余额为：893.53159056
+2022-05-23 12:33:20 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 12:33:20 [INFO] - 此时BNXUSDT：价格为：119.51138081开仓价格为:118.7378575745,开仓数量为：-51.7,盈利为：0，强平价为：143.4128336,账户余额为：893.53159056
+2022-05-23 12:33:22 [INFO] - 此时BNXUSDT：价格为：119.48732681开仓价格为:118.7378575745,开仓数量为：-51.7,盈利为：-38.74755947535，强平价为：143.4128336,账户余额为：893.53159056
+2022-05-23 12:50:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-23 13:02:56 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 13:02:56 [INFO] - 此时BNXUSDT：价格为：119.39731149开仓价格为:118.74225455,开仓数量为：-52,盈利为：0，强平价为：143.17999655,账户余额为：893.51725056
+2022-05-23 13:02:57 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 13:02:57 [INFO] - 此时BNXUSDT：价格为：119.39659509开仓价格为:118.74225455,开仓数量为：-52,盈利为：0，强平价为：143.17999655,账户余额为：893.51725056
+2022-05-23 13:02:58 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 13:02:58 [INFO] - 此时BNXUSDT：价格为：119.39731149开仓价格为:118.74225455,开仓数量为：-52,盈利为：0，强平价为：143.17999655,账户余额为：893.51725056
+2022-05-23 13:02:59 [INFO] - 此时BNXUSDT：价格为：119.39731149开仓价格为:118.74225455,开仓数量为：-52,盈利为：-34.06296088，强平价为：143.17999655,账户余额为：893.51725056
+2022-05-23 13:05:28 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Read timed out
+2022-05-23 13:06:40 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 13:06:40 [INFO] - 此时BNXUSDT：价格为：119.33开仓价格为:118.7455685774,开仓数量为：-52.3,盈利为：0，强平价为：142.94979767,账户余额为：893.50293216
+2022-05-23 13:34:48 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-23 14:20:08 [INFO] - 此时BNXUSDT：价格为：119.88231611开仓价格为:118.7455685774,开仓数量为：-52.3,盈利为：-59.45189595498，强平价为：141.71800018,账户余额为：895.10042416
+2022-05-23 14:23:42 [INFO] - 此时BNXUSDT：价格为：119.8开仓价格为:118.7515824448,开仓数量为：-52.6,盈利为：-55.14676340352，强平价为：141.51931073,账户余额为：895.08604816
+2022-05-23 14:24:04 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 14:24:04 [INFO] - 此时BNXUSDT：价格为：119.75334599开仓价格为:118.7570744158,开仓数量为：-52.9,盈利为：0，强平价为：141.32332888,账户余额为：895.07168176
+2022-05-23 14:24:06 [INFO] - 此时BNXUSDT：价格为：119.8开仓价格为:118.7570744158,开仓数量为：-52.9,盈利为：-55.17076340418，强平价为：141.32332888,账户余额为：895.07168176
+2022-05-23 15:41:48 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 15:41:48 [INFO] - 此时BNXUSDT：价格为：119.65040872开仓价格为:118.7624480563,开仓数量为：-53.2,盈利为：0，强平价为：141.13057064,账户余额为：895.05731656
+2022-05-23 15:41:49 [INFO] - 此时BNXUSDT：价格为：119.56264811开仓价格为:118.7624480563,开仓数量为：-53.2,盈利为：-42.57064285684，强平价为：141.13057064,账户余额为：895.05731656
+2022-05-23 15:41:51 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 15:41:51 [INFO] - 此时BNXUSDT：价格为：119.56024155开仓价格为:118.766247413,开仓数量为：-53.5,盈利为：0，强平价为：140.93880216,账户余额为：895.04298376
+2022-05-23 15:41:53 [INFO] - 此时BNXUSDT：价格为：119.46708461开仓价格为:118.766247413,开仓数量为：-53.5,盈利为：-37.4947900395，强平价为：140.93880216,账户余额为：895.04298376
+2022-05-23 15:41:55 [INFO] - 此时BNXUSDT：价格为：119.29695971开仓价格为:118.7734234668,开仓数量为：-54.4,盈利为：-28.48037163008，强平价为：140.37646288,账户余额为：895.00007176
+2022-05-23 15:41:56 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 15:41:56 [INFO] - 此时BNXUSDT：价格为：119.04830511开仓价格为:118.7771109691,开仓数量为：-55.3,盈利为：0，强平价为：139.83627292,账户余额为：894.95723176
+2022-05-23 15:41:57 [INFO] - 此时BNXUSDT：价格为：119.04830511开仓价格为:118.7771109691,开仓数量为：-55.3,盈利为：-14.99703599177，强平价为：139.83627292,账户余额为：894.95723176
+2022-05-23 15:41:59 [INFO] - 此时BNXUSDT：价格为：118.94384051开仓价格为:118.7775042552,开仓数量为：-55.6,盈利为：-9.24829576688，强平价为：139.66072898,账户余额为：894.94296976
+2022-05-23 15:42:01 [INFO] - 此时BNXUSDT：价格为：118.85110591开仓价格为:118.7767663075,开仓数量为：-55.9,盈利为：-4.15558377975，强平价为：139.48630837,账户余额为：894.92873296
+2022-05-23 15:42:02 [INFO] - 此时BNXUSDT：价格为：118.71开仓价格为:118.7757693343,开仓数量为：-56.2,盈利为：3.69623658766，强平价为：139.314217,账户余额为：894.91450216
+2022-05-23 15:42:03 [INFO] - 此时BNXUSDT：价格为：118.65开仓价格为:118.7745174617,开仓数量为：-56.5,盈利为：7.03523658605，强平价为：139.14440091,账户余额为：894.90027736
+2022-05-23 15:42:04 [INFO] - 此时BNXUSDT：价格为：118.54开仓价格为:118.7732259962,开仓数量为：-56.8,盈利为：13.24723658416，强平价为：138.97711111,账户余额为：894.88605376
+2022-05-23 15:42:05 [INFO] - 此时BNXUSDT：价格为：118.51开仓价格为:118.7718430225,开仓数量为：-57.1,盈利为：14.95123658475，强平价为：138.81221472,账户余额为：894.87183256
+2022-05-23 16:16:00 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:16:00 [INFO] - 此时BNXUSDT：价格为：118.51开仓价格为:118.770474505,开仓数量为：-57.4,盈利为：0，强平价为：138.66146189,账户余额为：895.32560456
+2022-05-23 16:16:01 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:16:01 [INFO] - 此时BNXUSDT：价格为：118.51开仓价格为:118.770474505,开仓数量为：-57.4,盈利为：0，强平价为：138.66146189,账户余额为：895.32560456
+2022-05-23 16:16:04 [INFO] - 此时BNXUSDT：价格为：118.53开仓价格为:118.770474505,开仓数量为：-57.4,盈利为：13.8032365870，强平价为：138.66146189,账户余额为：895.32560456
+2022-05-23 16:16:12 [INFO] - 此时BNXUSDT：价格为：118.48515005开仓价格为:118.7692242043,开仓数量为：-57.7,盈利为：16.39107870311，强平价为：138.50154775,账户余额为：895.31138096
+2022-05-23 16:16:16 [INFO] - 此时BNXUSDT：价格为：118.36开仓价格为:118.7672626998,开仓数量为：-58,盈利为：23.6212365884，强平价为：138.34298111,账户余额为：895.29717416
+2022-05-23 16:16:23 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:16:23 [INFO] - 此时BNXUSDT：价格为：118.31开仓价格为:118.7651327031,开仓数量为：-58.3,盈利为：0，强平价为：138.18648682,账户余额为：895.28297176
+2022-05-23 16:16:24 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:16:24 [INFO] - 此时BNXUSDT：价格为：118.29801132开仓价格为:118.7651327031,开仓数量为：-58.3,盈利为：0，强平价为：138.18648682,账户余额为：895.28297176
+2022-05-23 16:16:30 [INFO] - 此时BNXUSDT：价格为：118.2972589开仓价格为:118.7651327031,开仓数量为：-58.3,盈利为：27.27704272073，强平价为：138.18648682,账户余额为：895.28297176
+2022-05-23 16:20:07 [INFO] - 此时BNXUSDT：价格为：118.23开仓价格为:118.762495505,开仓数量为：-58.6,盈利为：31.2042365930，强平价为：138.031536,账户余额为：895.26878176
+2022-05-23 16:23:51 [INFO] - 此时BNXUSDT：价格为：118.14开仓价格为:118.7596814362,开仓数量为：-58.9,盈利为：36.49923659218，强平价为：137.87855079,账户余额为：895.25459656
+2022-05-23 16:24:04 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:04 [INFO] - 此时BNXUSDT：价格为：118.09302759开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:05 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:05 [INFO] - 此时BNXUSDT：价格为：118.09302759开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:07 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:07 [INFO] - 此时BNXUSDT：价格为：118.0923677开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:08 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:08 [INFO] - 此时BNXUSDT：价格为：118.0923677开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:09 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:09 [INFO] - 此时BNXUSDT：价格为：118.0930763开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:10 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:10 [INFO] - 此时BNXUSDT：价格为：118.0930763开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:24:12 [INFO] - 此时BNXUSDT：价格为：118.09316078开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：0，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:24:13 [INFO] - 此时BNXUSDT：价格为：118.09243358开仓价格为:118.7563384559,开仓数量为：-59.2,盈利为：39.30316865328，强平价为：137.72698849,账户余额为：895.24042456
+2022-05-23 16:26:31 [INFO] - 此时BNXUSDT：价格为：118.46开仓价格为:118.7528779259,开仓数量为：-59.5,盈利为：17.42623659105，强平价为：132.23450257,账户余额为：880.83619577
+2022-05-23 16:26:32 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:26:32 [INFO] - 此时BNXUSDT：价格为：118.40661451开仓价格为:118.67152228,开仓数量为：-75.7,盈利为：0，强平价为：129.00719852,账户余额为：880.06914057
+2022-05-23 16:26:37 [INFO] - 此时BNXUSDT：价格为：118.39开仓价格为:118.67152228,开仓数量为：-75.7,盈利为：21.311236596，强平价为：129.00719852,账户余额为：880.06914057
+2022-05-23 16:34:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:34:12 [INFO] - 此时BNXUSDT：价格为：118.36871405开仓价格为:118.6704373236,开仓数量为：-76,盈利为：0，强平价为：128.96050247,账户余额为：880.05493297
+2022-05-23 16:34:13 [INFO] - 此时BNXUSDT：价格为：118.14开仓价格为:118.66084285,开仓数量为：-77.4,盈利为：40.313236590，强平价为：128.74277907,账户余额为：879.98877457
+2022-05-23 16:34:28 [INFO] - 此时BNXUSDT：价格为：118.1开仓价格为:118.6588318737,开仓数量为：-77.7,盈利为：43.42123658649，强平价为：128.69714482,账户余额为：879.97459777
+2022-05-23 16:35:24 [INFO] - 此时BNXUSDT：价格为：118.08211548开仓价格为:118.656797905,开仓数量为：-78,盈利为：44.825229150，强平价为：128.65182354,账户余额为：879.96042217
+2022-05-23 16:47:50 [INFO] - 此时BNXUSDT：价格为：118.02039406开仓价格为:118.6542814379,开仓数量为：-78.3,盈利为：49.63338168957，强平价为：128.60635659,账户余额为：879.94626217
+2022-05-23 16:54:05 [INFO] - 此时BNXUSDT：价格为：118.00581219开仓价格为:118.6517841805,开仓数量为：-78.6,盈利为：50.77339845330，强平价为：128.56123673,账户余额为：879.93210217
+2022-05-23 16:54:08 [INFO] - 此时BNXUSDT：价格为：117.90225065开仓价格为:118.648621503,开仓数量为：-78.9,盈利为：58.8886603017，强平价为：128.51578261,账户余额为：879.91796377
+2022-05-23 16:54:11 [INFO] - 此时BNXUSDT：价格为：117.9015282开仓价格为:118.6452933912,开仓数量为：-79.2,盈利为：58.90620314304，强平价为：128.4704854,账户余额为：879.90383137
+2022-05-23 16:56:52 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 16:56:52 [INFO] - 此时BNXUSDT：价格为：117.79开仓价格为:118.6356084468,开仓数量为：-80.1,盈利为：0，强平价为：128.33677786,账户余额为：879.86142937
+2022-05-23 16:57:11 [INFO] - 此时BNXUSDT：价格为：117.81开仓价格为:118.6356084468,开仓数量为：-80.1,盈利为：66.13123658868，强平价为：128.33677786,账户余额为：879.86142937
+2022-05-23 17:02:32 [INFO] - 此时BNXUSDT：价格为：117.85开仓价格为:118.6324407535,开仓数量为：-80.4,盈利为：62.90823658140，强平价为：128.90861942,账户余额为：929.84729498
+2022-05-23 17:02:33 [INFO] - 此时BNXUSDT：价格为：117.84开仓价格为:118.5980861498,开仓数量为：-84,盈利为：63.6792365832，强平价为：128.38185825,账户余额为：929.67761858
+2022-05-23 17:37:02 [INFO] - 此时BNXUSDT：价格为：118.89开仓价格为:118.5953171599,开仓数量为：-63.3,盈利为：-18.65342377833，强平价为：131.83266231,账户余额为：921.37402378
+2022-05-23 17:38:07 [INFO] - 此时BNXUSDT：价格为：118.79928017开仓价格为:118.6383343376,开仓数量为：-75.9,盈利为：-12.21578867916，强平价为：129.47500715,账户余额为：920.77499738
+2022-05-23 17:38:19 [INFO] - 此时BNXUSDT：价格为：118.79766315开仓价格为:118.6387739662,开仓数量为：-76.2,盈利为：-12.10735580556，强平价为：129.42796865,账户余额为：920.76074738
+2022-05-23 17:40:05 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:05 [INFO] - 此时BNXUSDT：价格为：118.73431597开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:06 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:06 [INFO] - 此时BNXUSDT：价格为：118.73504358开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:07 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:07 [INFO] - 此时BNXUSDT：价格为：118.73431515开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:09 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:09 [INFO] - 此时BNXUSDT：价格为：118.73431474开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:10 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:10 [INFO] - 此时BNXUSDT：价格为：118.73431433开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:12 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:12 [INFO] - 此时BNXUSDT：价格为：118.73431391开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:13 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:13 [INFO] - 此时BNXUSDT：价格为：118.73431309开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:14 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:14 [INFO] - 此时BNXUSDT：价格为：118.73431268开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:15 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:15 [INFO] - 此时BNXUSDT：价格为：118.73503987开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:16 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:16 [INFO] - 此时BNXUSDT：价格为：118.73431144开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:19 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:19 [INFO] - 此时BNXUSDT：价格为：118.73431144开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:20 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:20 [INFO] - 此时BNXUSDT：价格为：118.73503822开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:21 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:21 [INFO] - 此时BNXUSDT：价格为：118.73430979开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:22 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:22 [INFO] - 此时BNXUSDT：价格为：118.7350374开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:23 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:23 [INFO] - 此时BNXUSDT：价格为：118.73503698开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:24 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:24 [INFO] - 此时BNXUSDT：价格为：118.73430855开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:25 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:25 [INFO] - 此时BNXUSDT：价格为：118.73430814开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:26 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:26 [INFO] - 此时BNXUSDT：价格为：118.73430773开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:27 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:27 [INFO] - 此时BNXUSDT：价格为：118.73503533开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:40:28 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:40:28 [INFO] - 此时BNXUSDT：价格为：118.73430649开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：0，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:41:26 [INFO] - 此时BNXUSDT：价格为：118.77024474开仓价格为:118.6392493624,开仓数量为：-76.5,盈利为：-10.02114638640，强平价为：129.38133789,账户余额为：920.74649618
+2022-05-23 17:41:27 [INFO] - 此时BNXUSDT：价格为：118.68316851开仓价格为:118.6390960446,开仓数量为：-76.8,盈利为：-3.38476534272，强平价为：129.33445287,账户余额为：920.73226418
+2022-05-23 17:41:54 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:41:54 [INFO] - 此时BNXUSDT：价格为：118.66359606开仓价格为:118.6389439199,开仓数量为：-77.1,盈利为：0，强平价为：129.2879327,账户余额为：920.71803218
+2022-05-23 17:41:55 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 17:41:55 [INFO] - 此时BNXUSDT：价格为：118.6628681开仓价格为:118.6389439199,开仓数量为：-77.1,盈利为：0，强平价为：129.2879327,账户余额为：920.71803218
+2022-05-23 17:41:58 [INFO] - 此时BNXUSDT：价格为：118.66359606开仓价格为:118.6389439199,开仓数量为：-77.1,盈利为：-1.90068000171，强平价为：129.2879327,账户余额为：920.71803218
+2022-05-23 17:47:23 [INFO] - 此时BNXUSDT：价格为：118.56开仓价格为:118.6389867729,开仓数量为：-77.4,盈利为：6.11357622246，强平价为：129.24196498,账户余额为：920.70379418
+2022-05-23 17:47:25 [INFO] - 此时BNXUSDT：价格为：118.56开仓价格为:118.6386045846,开仓数量为：-77.7,盈利为：6.10757622342，强平价为：129.19593187,账户余额为：920.68956938
+2022-05-23 17:47:27 [INFO] - 此时BNXUSDT：价格为：118.54开仓价格为:118.6382253362,开仓数量为：-78,盈利为：7.6615762236，强平价为：129.15025286,账户余额为：920.67534458
+2022-05-23 18:26:37 [INFO] - 此时BNXUSDT：价格为：118.48538375开仓价格为:118.6378489939,开仓数量为：-78.3,盈利为：11.93802859737，强平价为：129.10492389,账户余额为：920.66111978
+2022-05-23 18:26:54 [INFO] - 此时BNXUSDT：价格为：118.32开仓价格为:118.6365594939,开仓数量为：-78.6,盈利为：24.88157622054，强平价为：129.05903433,账户余额为：920.64692378
+2022-05-23 18:32:20 [INFO] - 此时BNXUSDT：价格为：118.37240084开仓价格为:118.6317992008,开仓数量为：-79.8,盈利为：20.69998919184，强平价为：128.87922413,账户余额为：920.59013021
+2022-05-23 18:32:22 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 18:32:22 [INFO] - 此时BNXUSDT：价格为：118.25开仓价格为:118.6304066944,开仓数量为：-80.1,盈利为：0，强平价为：128.83489098,账户余额为：920.57593901
+2022-05-23 18:32:38 [INFO] - 此时BNXUSDT：价格为：118.2170821开仓价格为:118.6304066944,开仓数量为：-80.1,盈利为：33.10730001144，强平价为：128.83489098,账户余额为：920.57593901
+2022-05-23 18:33:17 [INFO] - 此时BNXUSDT：价格为：118.20071805开仓价格为:118.6288753261,开仓数量为：-80.4,盈利为：34.42384499844，强平价为：128.79074095,账户余额为：920.56175261
+2022-05-23 18:35:48 [INFO] - 此时BNXUSDT：价格为：118.23905743开仓价格为:118.6272066446,开仓数量为：-80.7,盈利为：31.32364161822，强平价为：128.74677202,账户余额为：920.54757101
+2022-05-23 18:36:50 [INFO] - 此时BNXUSDT：价格为：118.11583178开仓价格为:118.6254392126,开仓数量为：-81,盈利为：41.2782020406，强平价为：128.70301881,账户余额为：920.53339301
+2022-05-23 18:50:29 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-23 19:05:32 [INFO] - 此时BNXUSDT：价格为：118.31505835开仓价格为:118.6235372229,开仓数量为：-81.3,盈利为：25.07933236677，强平价为：128.65944242,账户余额为：920.51921981
+2022-05-23 19:05:33 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 19:05:33 [INFO] - 此时BNXUSDT：价格为：118.03开仓价格为:118.6209139243,开仓数量为：-81.6,盈利为：0，强平价为：128.61545873,账户余额为：920.50507061
+2022-05-23 19:05:34 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 19:05:34 [INFO] - 此时BNXUSDT：价格为：117.94开仓价格为:118.6143031095,开仓数量为：-82.4,盈利为：0，强平价为：128.50002289,账户余额为：920.46732981
+2022-05-23 19:05:37 [ERROR] - 下单异常[Executing] -2019: Margin is insufficient.
+2022-05-23 19:05:37 [INFO] - 此时BNXUSDT：价格为：117.97开仓价格为:118.6143031095,开仓数量为：-82.4,盈利为：0，强平价为：128.50002289,账户余额为：920.46732981
+2022-05-23 20:37:48 [ERROR] - 获取余额异常[Invoking] Unexpected error: timeout
+2022-05-23 20:37:58 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Read timed out
+2022-05-23 20:38:08 [ERROR] - 获取余额异常[Invoking] Unexpected error: Read timed out
+2022-05-23 20:38:14 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:03 [ERROR] - 获取仓位异常[Invoking] Unexpected error: timeout
+2022-05-23 20:40:08 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:13 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:18 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:23 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:28 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:33 [ERROR] - 获取仓位异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:40:38 [ERROR] - 获取余额异常[Invoking] Unexpected error: Connection reset
+2022-05-23 20:41:22 [ERROR] - 获取仓位异常[Invoking] Unexpected error: interrupted
+2022-05-23 20:41:22 [ERROR] - 获取余额异常[Invoking] Unexpected error: interrupted
+2022-05-23 20:41:22 [INFO] - 底层下单异常
+2022-05-23 20:41:27 [INFO] - {dataSource-1} closed
