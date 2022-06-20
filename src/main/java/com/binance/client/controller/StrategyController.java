@@ -32,8 +32,8 @@ public class StrategyController {
     }
 
     @GetMapping("/ema/start")
-    public Boolean emaStart(Integer id){
-        return tradeService.emaStart(id);
+    public Boolean emaStart(String username,String num){
+        return tradeService.emaStart(username,num);
     }
 
     @GetMapping("/update/state")

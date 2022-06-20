@@ -9,6 +9,7 @@ import com.binance.client.constant.PrivateConfig;
 import com.binance.client.mapper.StrategyMapper;
 import com.binance.client.mapper.TradeRecordMapper;
 import com.binance.client.model.Strategy;
+import com.binance.client.model.SysUser;
 import com.binance.client.model.TradeRecord;
 import com.binance.client.model.enums.*;
 import com.binance.client.model.market.Candlestick;
@@ -38,6 +39,9 @@ public class TradeServiceImpl {
 
     @Resource
     private StrategyMapper strategyMapper;
+
+    @Resource
+    private UserServiceImpl userService;
 
 
     public Integer addStrategy(StrategyBo strategyBo) {
@@ -165,7 +169,6 @@ public class TradeServiceImpl {
         Thread.sleep(100);
         return true;
     }
-
 
 
     public Integer addPriceRecord() {
@@ -441,7 +444,7 @@ public class TradeServiceImpl {
         return ema;
     }
 
-    public Boolean emaStart(Integer id) {
+    public Boolean emaStart(String username, String num) {
         RequestOptions options = new RequestOptions();
         SyncRequestClient syncRequestClient = SyncRequestClient.create(PrivateConfig.API_KEY1, PrivateConfig.SECRET_KEY1,
                 options);
@@ -455,6 +458,10 @@ public class TradeServiceImpl {
         Double init55 = 0d;
         Double init120 = 0d;
         while (true) {
+            SysUser sysUser = userService.selectByUserName(username);
+            if (Objects.nonNull(sysUser) && sysUser.getState().equals(1)) {
+                break;
+            }
             List<Double> prices = new ArrayList<>();
             List<Candlestick> candlesticks = new ArrayList<>();
             try {
@@ -473,14 +480,14 @@ public class TradeServiceImpl {
                         //平多做空
                         try {
                             Order order2 = syncRequestClient.postOrder("BTCUSDT", OrderSide.SELL, PositionSide.SHORT, OrderType.MARKET, null,
-                                    "0.2", null,
+                                    num, null,
                                     null, null, null, WorkingType.MARK_PRICE, NewOrderRespType.RESULT);
                         } catch (Exception e) {
                             log.error("做空异常{}", e);
                         }
                         try {
                             Order order1 = syncRequestClient.postOrder("BTCUSDT", OrderSide.SELL, PositionSide.LONG, OrderType.MARKET, null,
-                                    "0.2", null,
+                                    num, null,
                                     null, null, null, WorkingType.MARK_PRICE, NewOrderRespType.RESULT);
                         } catch (Exception e) {
                             log.error("平多异常{}", e);
@@ -491,14 +498,14 @@ public class TradeServiceImpl {
                     if (init55 < init120 && ema21 > ema55 && ema55 > ema120) {
                         try {
                             Order order1 = syncRequestClient.postOrder("BTCUSDT", OrderSide.BUY, PositionSide.LONG, OrderType.MARKET, null,
-                                    "0.2", null,
+                                    num, null,
                                     null, null, null, WorkingType.MARK_PRICE, NewOrderRespType.RESULT);
                         } catch (Exception e) {
                             log.error("做多异常{}", e);
                         }
                         try {
                             Order order2 = syncRequestClient.postOrder("BTCUSDT", OrderSide.BUY, PositionSide.SHORT, OrderType.MARKET, null,
-                                    "0.2", null,
+                                    num, null,
                                     null, null, null, WorkingType.MARK_PRICE, NewOrderRespType.RESULT);
                         } catch (Exception e) {
                             log.error("平空异常{}", e);
@@ -515,5 +522,6 @@ public class TradeServiceImpl {
                 e.printStackTrace();
             }
         }
+        return true;
     }
 }

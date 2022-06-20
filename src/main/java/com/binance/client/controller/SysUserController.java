@@ -1,12 +1,9 @@
 package com.binance.client.controller;
 
-import com.binance.client.bo.StrategyBo;
 import com.binance.client.bo.SysUserBo;
-import com.binance.client.model.SysUser;
-import com.binance.client.service.TradeServiceImpl;
 import com.binance.client.service.UserServiceImpl;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +16,7 @@ public class SysUserController {
     private UserServiceImpl userService;
 
     @PostMapping("/add")
-    public Integer addUser(SysUserBo sysUserBo){
+    public Integer addUser(@RequestBody SysUserBo sysUserBo){
         Integer id=userService.addUser(sysUserBo);
         return id;
     }

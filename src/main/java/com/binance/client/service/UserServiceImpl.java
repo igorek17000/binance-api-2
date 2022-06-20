@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -35,5 +36,15 @@ public class UserServiceImpl {
             sysUserMapper.updateById(s);
         });
         return true;
+    }
+
+    public SysUser selectByUserName(String username) {
+        LambdaQueryWrapper<SysUser> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(StringUtils.isNotBlank(username), SysUser::getUsername, username);
+        List<SysUser> sysUsers = sysUserMapper.selectList(wrapper);
+        if (CollectionUtils.isEmpty(sysUsers)) {
+            return null;
+        }
+        return sysUsers.get(0);
     }
 }
