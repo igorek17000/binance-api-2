@@ -1,7 +1,6 @@
 package com.binance.client.controller;
 
 import com.binance.client.bo.StrategyBo;
-import com.binance.client.model.Strategy;
 import com.binance.client.service.TradeServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

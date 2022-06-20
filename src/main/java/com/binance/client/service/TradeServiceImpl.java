@@ -83,7 +83,7 @@ public class TradeServiceImpl {
     }
 
     /**
-     * 下单接口
+     * 下单滚仓做空接口
      */
     //     * @param symbol 交易对
     //     * @param minNum 最小数量
@@ -91,7 +91,6 @@ public class TradeServiceImpl {
     //     * @param bao    回撤控制，如1.03，即高于爆仓价的70%，开始减仓
     private Boolean placeOrder(SyncRequestClient syncRequestClient, Strategy strategy) throws InterruptedException {
         BigDecimal xia = new BigDecimal(0);
-        BigDecimal fomo = new BigDecimal(0.5);
         //盈利
         BigDecimal yin = new BigDecimal(0);
         //差额
@@ -166,6 +165,8 @@ public class TradeServiceImpl {
         Thread.sleep(100);
         return true;
     }
+
+
 
     public Integer addPriceRecord() {
         RequestOptions options = new RequestOptions();
